@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test-banner</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="close-button">
+        <a href="#" aria-label="Close">
+          <img src="/icons/cross.svg" alt="Close" />
+        </a>
+      </div>
+      <main class="content">
+        <h1 class="title" data-i18n="title">Get Unlimited Access</h1>
+
+        <section class="features">
+          <div class="feature feature--art">
+            <p data-i18n="feature1">Unlimited Art Creation</p>
+          </div>
+          <div class="feature feature--styles">
+            <p data-i18n="feature2">Exclusive<br />Styles</p>
+          </div>
+          <div class="feature feature--avatars">
+            <p data-i18n="feature3">Magic Avatars With 20% Off</p>
+          </div>
+        </section>
+
+        <section class="access-options">
+          <div class="option option-yearly" data-link="https://apple.com/">
+            <div class="badge" data-i18n="best-offer">Best offer</div>
+            <img src="/icons/line1.svg" alt="" class="line-decor-left" />
+            <img src="/icons/line2.svg" alt="" class="line-decor-right" />
+            <div class="option-yearly-left">
+              <p class="label" data-i18n="yearly-access">Yearly Access</p>
+              <p class="price" data-i18n="just-3999">Just $39.99 per year</p>
+            </div>
+            <div class="option-yearly-right">
+              <p class="price">
+                <span data-i18n="price-048">$0.48</span><br />
+                <span data-i18n="per-week">per week</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="option option-weekly active"
+            data-link="https://google.com/"
+          >
+            <div class="option-weekly-left">
+              <p class="label" data-i18n="weekly-access">Weekly Access</p>
+            </div>
+            <div class="option-weekly-right">
+              <p class="price">
+                <span data-i18n="price-699">$6.99</span><br />
+                <span data-i18n="per-week">per week</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <button class="continue-button" data-i18n="continue">Continue</button>
+      </main>
+      <footer class="footer">
+        <a href="#" data-i18n="terms">Terms of Use</a>
+        <a href="#" data-i18n="privacy">Privacy Policy</a>
+        <a href="#" data-i18n="restore">Restore</a>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
